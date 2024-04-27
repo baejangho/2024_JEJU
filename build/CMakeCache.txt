@@ -26,6 +26,8 @@ Boost_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0
 //Path to a file.
 Boost_INCLUDE_DIR:PATH=/usr/include
 
+Boost_REGEX_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+
 Boost_SYSTEM_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
 
 Boost_THREAD_LIBRARY_RELEASE:STRING=/usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
@@ -431,6 +433,9 @@ boost_atomic_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_atomic-1.71.0
 //The directory containing a CMake configuration file for boost_headers.
 boost_headers_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_headers-1.71.0
 
+//The directory containing a CMake configuration file for boost_regex.
+boost_regex_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_regex-1.71.0
+
 //The directory containing a CMake configuration file for boost_system.
 boost_system_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_system-1.71.0
 
@@ -748,6 +753,42 @@ std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
 topic_tools_DIR:PATH=/opt/ros/noetic/share/topic_tools/cmake
 
 //Value Computed by CMake
+ublox_BINARY_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/build/ublox_f9p/ublox
+
+//Value Computed by CMake
+ublox_SOURCE_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/src/ublox_f9p/ublox
+
+//Value Computed by CMake
+ublox_gps_BINARY_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/build/ublox_f9p/ublox_gps
+
+//Dependencies for the target
+ublox_gps_LIB_DEPENDS:STATIC=general;boost_system;general;boost_regex;general;boost_thread;general;ublox_msgs;general;/opt/ros/noetic/lib/libdiagnostic_updater.so;general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/aarch64-linux-gnu/libpthread.so;general;/usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/aarch64-linux-gnu/liblog4cxx.so;general;/usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+ublox_gps_SOURCE_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/src/ublox_f9p/ublox_gps
+
+//Value Computed by CMake
+ublox_msgs_BINARY_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/build/ublox_f9p/ublox_msgs
+
+//The directory containing a CMake configuration file for ublox_msgs.
+ublox_msgs_DIR:PATH=/home/jbae_lab/2024_JEJU_ws/devel/share/ublox_msgs/cmake
+
+//Dependencies for the target
+ublox_msgs_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libroscpp.so;general;/usr/lib/aarch64-linux-gnu/libpthread.so;general;/usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0;general;/opt/ros/noetic/lib/librosconsole.so;general;/opt/ros/noetic/lib/librosconsole_log4cxx.so;general;/opt/ros/noetic/lib/librosconsole_backend_interface.so;general;/usr/lib/aarch64-linux-gnu/liblog4cxx.so;general;/usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0;general;/opt/ros/noetic/lib/libxmlrpcpp.so;general;/opt/ros/noetic/lib/libroscpp_serialization.so;general;/opt/ros/noetic/lib/librostime.so;general;/usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0;general;/opt/ros/noetic/lib/libcpp_common.so;general;/usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0;general;/usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4;
+
+//Value Computed by CMake
+ublox_msgs_SOURCE_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/src/ublox_f9p/ublox_msgs
+
+//Value Computed by CMake
+ublox_serialization_BINARY_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/build/ublox_f9p/ublox_serialization
+
+//The directory containing a CMake configuration file for ublox_serialization.
+ublox_serialization_DIR:PATH=/home/jbae_lab/2024_JEJU_ws/devel/share/ublox_serialization/cmake
+
+//Value Computed by CMake
+ublox_serialization_SOURCE_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/src/ublox_f9p/ublox_serialization
+
+//Value Computed by CMake
 usb_cam_BINARY_DIR:STATIC=/home/jbae_lab/2024_JEJU_ws/build/usb_cam
 
 //Dependencies for the target
@@ -915,7 +956,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=31
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -959,7 +1000,7 @@ CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system thread ][v1.71.0()]
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake][cfound components: system regex thread ][v1.71.0()]
 //Details about finding OpenCV
 FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr][v4.2.0()]
 //Details about finding PY_em
@@ -1098,6 +1139,8 @@ avutil_libavutil_VERSION:INTERNAL=
 boost_atomic_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_headers_DIR
 boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_regex_DIR
+boost_regex_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_system_DIR
 boost_system_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_thread_DIR

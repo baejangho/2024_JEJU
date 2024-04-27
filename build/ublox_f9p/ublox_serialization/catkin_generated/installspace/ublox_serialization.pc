@@ -1,0 +1,8 @@
+prefix=/home/jbae_lab/2024_JEJU_ws/install
+
+Name: ublox_serialization
+Description: Description of ublox_serialization
+Version: 1.1.2
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: roscpp roscpp_serialization
