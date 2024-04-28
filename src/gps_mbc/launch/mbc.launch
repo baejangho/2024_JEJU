@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<launch>
+    <!-- NMEA Navsat Driver 노드 실행 -->
+    <node pkg="nmea_navsat_driver" type="nmea_topic_serial_reader" name="nmea_topic_serial_reader" output="screen">
+        <param name="port" value="/dev/ttyUSB0"/>
+        <param name="baud" value="115200"/>
+    </node>
+
+    <!-- MBC 노드 실행 -->
+    <node pkg="gps_mbc" type="mbc_utm.py" name="mbc_utm" output="screen"/>
+</launch>

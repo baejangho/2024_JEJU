@@ -1,0 +1,8 @@
+prefix=/home/jbae_lab/2024_JEJU_ws/install
+
+Name: cmd_vel_steer_angle
+Description: Description of cmd_vel_steer_angle
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs roscpp rospy std_msgs

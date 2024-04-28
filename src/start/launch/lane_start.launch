@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--start launch list-->
+    <include file="$(find usb_cam)/launch/usb_cam-test.launch"/>
+    
+    <!-- Set permissions for serial ports -->
+    <node pkg="rosserial_python" type="serial_node.py" name="serial_node" args="/dev/ttyACM0" output="screen">
+        <param name="port" value="/dev/ttyACM0"/>
+        <param name="baud" value="115200"/>
+    </node>
+    
+    <!--start python file list -->
+    <node pkg="cmd_vel_steer_angle" type="cmd_vel_steer_angle_node" name="cmd_vel_steer_angle_node" output="screen"/>
+    <node pkg="test" type="camera_akerman.py" name="camera_akerman_node" output="screen"/>
+    
+</launch>
+

@@ -1,0 +1,8 @@
+prefix=/home/jbae_lab/2024_JEJU_ws/devel
+
+Name: henes_car_control
+Description: Description of henes_car_control
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp rospy std_msgs geometry_msgs sensor_msgs nav_msgs tf
