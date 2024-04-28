@@ -1,0 +1,8 @@
+prefix=/home/jbae_lab/2024_JEJU_ws/devel
+
+Name: PR_code
+Description: Description of PR_code
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -176,6 +176,7 @@ if __name__ == "__main__":
         hf_imu = serial.Serial(port=port, baudrate=baudrate, timeout=0.5)
         if hf_imu.isOpen():
             rospy.loginfo("\033[32m串口打开成功...\033[0m")
+            print("aaa")
         else:
             hf_imu.open()
             rospy.loginfo("\033[32m打开串口成功...\033[0m")
